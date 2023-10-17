@@ -33,7 +33,7 @@
 ----------------------------------------------------------
 
     A feladat beadására 2 mód van:
-    1. Az index.php fájlt fel kell tölteni Google Classroom feladathoz. (1 pont)
+    1. Az doga.php fájlt fel kell tölteni Google Classroom feladathoz. (1 pont)
     VAGY
     2. Az elkészült feladatokat egy általad létrehozott nyilvános GitHub repository-ba kell feltölteni, majd a repository linkjét a feladat beadásához kell csatolni. (3 pont)
 
