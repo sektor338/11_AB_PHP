@@ -15,7 +15,7 @@
  * var_dump();   - prints out the type and value of a variable
  * print_r();   - prints out the value of a variable
  *
- * $_SErVER['REQUEST_METHOD'] - GET, POST
+ * $_SERVER['REQUEST_METHOD'] - GET, POST
  * htmlspecialchars(); - converts special characters to HTML entities (security) (e.g. < to &lt;) (e.g. > to &gt;)
  * empty(); - checks if a variable is empty
  * exit(); - terminates the script
