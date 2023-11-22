@@ -9,7 +9,7 @@
  * * $_SERVER['DOCUMENT_ROOT'] - root folder of the project
  * * $_SERVER['PHP_SELF'] - current file
  * * $_SERVER['SERVER_NAME'] - server name
- *  * $_SERVER['REQUEST_METHOD'] - request method
+ * * $_SERVER['REQUEST_METHOD'] - request method
  * $_FILES - file data
  *
  * var_dump();   - prints out the type and value of a variable
