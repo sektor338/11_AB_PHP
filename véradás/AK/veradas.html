@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Véradó Jelentkezés</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-red-100">
+    <div class="container mx-auto p-4 flex justify-center items-center flex-col">
+        <img src="MV2.png" alt="MV" class="w-96 h-auto shadow-md rounded mb-4">
+        <h1 class="text-3xl text-red-600 mb-4">Véradó Jelentkezés</h1>
+        <form action="feldolgozas.php" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96 flex justify-center flex-col">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="vezeteknev">
+                    Vezetéknév:
+                </label>
+                <input class="shadow appearance-none border rounded w-80 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="vezeteknev" type="text" placeholder="Vezetéknév" name="vezeteknev" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="keresztnev">
+                    Keresztnév:
+                </label>
+                <input class="shadow appearance-none border rounded w-80 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="keresztnev" type="text" placeholder="Keresztnév" name="keresztnev" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Email:
+                </label>
+                <input class="shadow appearance-none border rounded w-80 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email cím" name="email" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="telefonszam">
+                    Telefonszám:
+                </label>
+                <input class="shadow appearance-none border rounded w-80 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="telefonszam" type="tel" placeholder="Telefonszám" name="telefonszam" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="lakcim">
+                    Lakcím:
+                </label>
+                <textarea class="shadow appearance-none border rounded w-80 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lakcim" placeholder="Lakcím" name="lakcim" required></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="szuletesidatum">
+                    Születési dátum:
+                </label>
+                <input class="shadow appearance-none border rounded w-80 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="szuletesidatum" type="date" name="szuletesidatum" required>
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="vercsoport">
+                    Vércsoport:
+                </label>
+                <select class="block appearance-none w-80 bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500" id="vercsoport" name="vercsoport" required>
+                    <option value="A">A</option>
+                    <option value="A-">A-</option>
+                    <option value="A+">A+</option>
+                    <option value="B">B</option>
+                    <option value="B-">B-</option>
+                    <option value="B+">B+</option>
+                    <option value="AB">AB</option>
+                    <option value="AB-">AB-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="nem tudom">Nem tudom</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="alkoholfogyasztas">
+                    Fogyaszt-e alkoholt?
+                </label>
+                <input class="mr-2 leading-tight" type="radio" id="igen" name="alkoholfogyasztas" value="igen">
+                <label class="text-gray-700" for="igen">
+                    Igen
+                </label>
+                <input class="mr-2 ml-4 leading-tight" type="radio" id="nem" name="alkoholfogyasztas" value="nem">
+                <label class="text-gray-700" for="nem">
+                    Nem
+                </label>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="dohanyzas">
+                    Dohányzik-e?
+                </label>
+                <input class="mr-2 leading-tight" type="radio" id="dohanyzik" name="dohanyzas" value="dohanyzik">
+                <label class="text-gray-700" for="dohanyzik">
+                    Igen
+                </label>
+                <input class="mr-2 ml-4 leading-tight" type="radio" id="nemdohanyzik" name="dohanyzas" value="nem">
+                <label class="text-gray-700" for="nemdohanyzik">
+                    Nem
+                </label>
+            </div>
+
+            <div class="mb-4">
+                <input type="checkbox" id="hirlevel" name="hirlevel" value="feliratkozik">
+                <label class="text-gray-700" for="hirlevel">
+                    Feliratkozik-e hírlevelünkre?
+                </label>
+            </div>
+
+            <div class="flex items-center justify-center">
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Jelentkezés
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
