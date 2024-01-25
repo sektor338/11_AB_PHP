@@ -35,7 +35,7 @@
 
 
     if (!isset($knev, $vnev, $email, $phone, $lakhey, $szul, $blood, $alc, $cig) || $_SERVER['REQUEST_METHOD'] != 'POST'){
-      header("location: index.php");
+      header("location: index");
     };
   ?>
 </head>
